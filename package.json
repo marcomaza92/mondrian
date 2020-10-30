@@ -1,0 +1,28 @@
+{
+  "name": "test-deploy-nextjs",
+  "version": "1.0.0",
+  "description": "Test deploy NextJS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [
+    "Test",
+    "Deploy",
+    "NextJS"
+  ],
+  "author": "Marco Maza",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^10.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "classnames": "^2.2.6",
+    "next-images": "^1.6.2",
+    "sass": "^1.27.2"
+  }
+}
