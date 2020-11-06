@@ -1,10 +1,11 @@
-import Card from '../components/Card';
+import Navigation from '../components/organisms/Navigation';
+
 import styles from './index.module.scss';
 
 const HomePage = () => {
   return (
     <div className={styles.mainContainer}>
-      <Card />
+      <Navigation />
     </div>
   )
 }
