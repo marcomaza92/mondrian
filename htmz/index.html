@@ -1,0 +1,43 @@
+<base target="htmz" />
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Candida Albicans</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/htmz/components/Homepage/Homepage.html#mainContent"
+          >Homepage</a
+        >
+        <a href="/htmz/components/About/About.html#mainContent">About</a>
+      </nav>
+    </header>
+    <div>
+      <h1 class="title">Candida Albicans</h1>
+      <main id="mainContent"></main>
+    </div>
+    <footer>
+      <p class="footer"></p>
+    </footer>
+    <script>
+      function htmz(frame) {
+        // Write your extensions here
+
+        // The browser automatically scrolls DOM changes into view in response to user interaction.
+        // This delay prevents that, making this is the only case where we don't lean on browser defaults.
+        // Remove setTimeout wrapper to allow automatic scrolling.
+        setTimeout(() =>
+          document
+            .querySelector(frame.contentWindow.location.hash || null)
+            ?.replaceWith(...frame.contentDocument.body.childNodes)
+        );
+      }
+    </script>
+    <script src="index.js"></script>
+    <iframe hidden name="htmz" onload="window.htmz(this)"></iframe>
+  </body>
+</html>
