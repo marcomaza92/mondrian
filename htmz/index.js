@@ -1,8 +1,7 @@
 const labels = {
-  name: "marcomaza92",
+  github: "https://github.com/marcomaza92",
 };
-
 const currentYear = new Date().getFullYear();
-document
-  .getElementsByClassName("footer")
-  .item(0).innerHTML = `${labels.name} - ${currentYear}`;
+
+document.querySelector(".footer a").setAttribute("href", labels.github);
+document.querySelector(".footer span").textContent = currentYear;
