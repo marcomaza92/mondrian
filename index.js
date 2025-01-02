@@ -3,5 +3,5 @@ const labels = {
 };
 const currentYear = new Date().getFullYear();
 
-document.querySelector(".footer a").setAttribute("href", labels.github);
-document.querySelector(".footer span").textContent = currentYear;
+document.querySelector(".footer .anchor").setAttribute("href", labels.github);
+document.querySelector(".footer .currentYear").textContent = currentYear;
